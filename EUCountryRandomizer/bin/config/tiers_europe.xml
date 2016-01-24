@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Properties file for available tiers in EU4 game.</comment>
+	<Tier ID="1">
+	    <Country>France</Country>
+	    <Country>England</Country>
+	    <Country>Castille</Country>
+	    <Country>Austria</Country>
+	    <Country>Ottomans</Country>
+	    <Country>Muscovy</Country>
+	    <Country>Denmark</Country>
+	    <Country>Burgundy</Country>
+	</Tier>
+	<Tier ID="2">
+		<Country>Sweden</Country>
+	    <Country>Poland</Country>
+	    <Country>Lithuania</Country>
+	    <Country>Bohemia</Country>
+	    <Country>Hungary</Country>
+	</Tier>
+	<Tier ID="3">
+		<Country>Aragon</Country>
+	    <Country>Mameluks</Country>
+	    <Country>Portugal</Country>
+	    <Country>Venice</Country>
+	    <Country>Novgorod</Country>
+	    <Country>Teutonic Order</Country>
+	    <Country>Brandenburg</Country>
+	</Tier>
+	<Tier ID="4">
+		<Country>Scotland</Country>
+	    <Country>Bavaria</Country>
+	    <Country>Savoy</Country>
+	    <Country>Hanseatic League</Country>
+	    <Country>Naples</Country>
+	    <Country>Livonian Order</Country>
+	    <Country>Switzerland</Country>
+	    <Country>Milan</Country>
+	    <Country>Genoa</Country>
+	    <Country>Saxony</Country>
+	</Tier>
+	<Tier ID="5">
+		<Country>Serbia</Country>
+	    <Country>Bosnia</Country>
+	    <Country>Byzantine</Country>
+	    <Country>Tuscany</Country>
+	    <Country>Norway</Country>
+	    <Country>Brittany</Country>
+	    <Country>Crimea</Country>
+	    <Country>Georgia</Country>
+	    <Country>Algiers</Country>
+	    <Country>Papal States</Country>
+	    <Country>Golden Horde</Country>
+	    <Country>Kazan</Country>
+	</Tier>
+	<Tier ID="6">
+	    <Country>Tripoli</Country>
+	    <Country>Tunisia</Country>
+	    <Country>Granada</Country>
+	    <Country>Irish Minor</Country>
+	</Tier>
+	<Tier ID="7">
+	    <Country>The Knights</Country>
+	    <Country>Ragusa</Country>
+	</Tier>
+</properties>

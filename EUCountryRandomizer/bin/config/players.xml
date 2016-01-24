@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Properties file for available players in EU4 game.</comment>
+	<Player ID="1">
+		<Name>Martin</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="2">
+		<Name>Hannes</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="3">
+		<Name>Per</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="4">
+		<Name>Mats</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="5">
+		<Name>Johan</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="6">
+		<Name>Erik</Name>
+		<Tier>3</Tier>
+	</Player>
+	<Player ID="7">
+		<Name>Christian</Name>
+		<Tier>4</Tier>
+	</Player>
+	<Player ID="8">
+		<Name>Gunnar</Name>
+		<Tier>6</Tier>
+	</Player>
+	<Player ID="9">
+		<Name>Fredrik</Name>
+		<Tier>1</Tier>
+	</Player>
+	<Player ID="10">
+		<Name>Jocke</Name>
+		<Tier>1</Tier>
+	</Player>
+</properties>

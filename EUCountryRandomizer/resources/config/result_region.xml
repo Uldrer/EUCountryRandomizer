@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+	<result>
+		<Player>Martin</Player>
+		<Country>Switzerland</Country>
+	</result>
+	<result>
+		<Player>Hannes</Player>
+		<Country>Scotland</Country>
+	</result>
+	<result>
+		<Player>Per</Player>
+		<Country>Livonian Order</Country>
+	</result>
+	<result>
+		<Player>Mats</Player>
+		<Country>Bavaria</Country>
+	</result>
+	<result>
+		<Player>Johan</Player>
+		<Country>Naples</Country>
+	</result>
+	<result>
+		<Player>Erik</Player>
+		<Country>Mameluks</Country>
+	</result>
+	<result>
+		<Player>Christian</Player>
+		<Country>Savoy</Country>
+	</result>
+	<result>
+		<Player>Gunnar</Player>
+		<Country>Tunisia</Country>
+	</result>
+	<result>
+		<Player>Fredrik</Player>
+		<Country>Burgundy</Country>
+	</result>
+	<result>
+		<Player>Jocke</Player>
+		<Country>Ottomans</Country>
+	</result>
+</config>
