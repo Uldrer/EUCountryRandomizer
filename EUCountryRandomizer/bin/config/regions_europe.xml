@@ -4,101 +4,219 @@
 <comment>Properties file for available regions in EU4 game.</comment>
 	<Region ID="1">
 		<Name>France</Name>
+		<Score>7</Score>
 		<Country>France</Country>
 	    <Country>Savoy</Country>
 	    <Country>Brittany</Country>
-	    <Country>Genoa</Country>
+	    <Country>Provence</Country>
+		<Country>Nevers</Country>
 	</Region>
 	<Region ID="2">
 		<Name>Nordic</Name>
+		<Score>7</Score>
 		<Country>Denmark</Country>
 	    <Country>Sweden</Country>
 	    <Country>Norway</Country>
 	</Region>
 	<Region ID="3">
 		<Name>Baltic</Name>
+		<Score>12</Score>
 		<Country>Teutonic Order</Country>
 	    <Country>Livonian Order</Country>
-	    <Country>Hanseatic League</Country>
+	    <Country>Lubeck</Country>
+		<Country>Riga</Country>
+		<Country>Holstein</Country>
+		<Country>Pomerania</Country>
+		<Country>Mecklemburg</Country>
 	</Region>
 	<Region ID="4">
 		<Name>Russia</Name>
+		<Score>7</Score>
 		<Country>Muscovy</Country>
 	    <Country>Novgorod</Country>
 	    <Country>Kazan</Country>
+		<Country>Tver</Country>
+		<Country>Ryazan</Country>
+		<Country>Odoyev</Country>
+		<Country>Muscovian vassal</Country>
 	</Region>
 	<Region ID="5">
 		<Name>Germany</Name>
+		<Score>20</Score>
 		<Country>Bohemia</Country>
 	    <Country>Brandenburg</Country>
 	    <Country>Bavaria</Country>
 		<Country>Saxony</Country>
+		<Country>Hesse</Country>
+		<Country>The Palatinate</Country>
+		<Country>Nuremberg</Country>
+		<Country>Ansbach</Country>
+		<Country>Wurzburg</Country>
+		<Country>Mainz</Country>
+		<Country>Alsace</Country>
+		<Country>Lorraine</Country>
+		<Country>Wurttemberg</Country>
+		<Country>Trier</Country>
+		<Country>Baden</Country>
+		<Country>Aachen</Country>
+		<Country>Cologne</Country>
+		<Country>Cleves</Country>
+		<Country>Brunswick</Country>
+		<Country>Munster</Country>
+		<Country>East Frisia</Country>
+		<Country>Oldenburg</Country>
+		<Country>Bremen</Country>
+		<Country>Verden</Country>
+		<Country>Luneburg</Country>
+		<Country>Dithmarschen</Country>
+		<Country>Hamburg</Country>
+		<Country>Saxe-Luneburg</Country>
+		<Country>Magdeburg</Country>
+		<Country>Anhalt</Country>
+		<Country>Salzburg</Country>
+		<Country>Augsburg</Country>
+		<Country>Memmingen</Country>
+		<Country>Ravensburg</Country>
+		<Country>Holstein</Country>
+		<Country>Pomerania</Country>
+		<Country>Mecklemburg</Country>
+		<Country>Ulm</Country>
+		<Country>Nasau</Country>
+		<Country>Frankfurt</Country>
 	</Region>
 	<Region ID="6">
 		<Name>Austria</Name>
+		<Score>7</Score>
 		<Country>Austria</Country>
 	    <Country>Switzerland</Country>
-	    <Country>Milan</Country>
+	    <Country>Salzburg</Country>
+		<Country>Augsburg</Country>
+		<Country>Memmingen</Country>
+		<Country>Ravensburg</Country>
 	</Region>
 	<Region ID="7">
 		<Name>Italy</Name>
+		<Score>12</Score>
 		<Country>Venice</Country>
 	    <Country>Naples</Country>
 		<Country>Milan</Country>
 		<Country>Genoa</Country>
-		<Country>Tuscany</Country>
+		<Country>Florence</Country>
 		<Country>Papal States</Country>
+		<Country>Siena</Country>
+		<Country>Urbino</Country>
+		<Country>Lucca</Country>
+		<Country>Ferrara</Country>
+		<Country>Mantua</Country>
+		<Country>Montferrat</Country>
 	</Region>
 	<Region ID="8">
 		<Name>Balkan</Name>
+		<Score>7</Score>
 		<Country>Serbia</Country>
 	    <Country>Bosnia</Country>
 		<Country>Ragusa</Country>
 		<Country>Hungary</Country>
+		<Country>Albania</Country>
+		<Country>Corfu</Country>
 	</Region>
 	<Region ID="9">
 		<Name>Africa</Name>
-		<Country>Tripoli</Country>
-	    <Country>Tunisia</Country>
+		<Score>10</Score>
+		<Country>Fezzan</Country>
+	    <Country>Tunis</Country>
 		<Country>Mameluks</Country>
-		<Country>Algiers</Country>
+		<Country>Tlemcen</Country>
+		<Country>Morocco</Country>
+		<Country>Mzab</Country>
+		<Country>Touggourt</Country>
+		<Country>Djerid</Country>
 	</Region>
 	<Region ID="10">
 		<Name>Turkey</Name>
+		<Score>7</Score>
 		<Country>Ottomans</Country>
 	    <Country>Byzantine</Country>
+		<Country>Athens</Country>
+		<Country>Cyprus</Country>
 		<Country>The Knights</Country>
+		<Country>Karaman</Country>
+		<Country>Ramazan</Country>
+		<Country>Dulkadir</Country>
+		<Country>Candar</Country>
 	</Region>
 	<Region ID="11">
 		<Name>Iberia</Name>
+		<Score>7</Score>
 		<Country>Castille</Country>
 	    <Country>Aragon</Country>
 		<Country>Portugal</Country>
 		<Country>Granada</Country>
+		<Country>Navarra</Country>
 	</Region>
 	<Region ID="12">
 		<Name>Britain</Name>
+		<Score>7</Score>
 		<Country>England</Country>
 	    <Country>Scotland</Country>
 		<Country>Irish Minor</Country>
 	</Region>
 	<Region ID="13">
 		<Name>Eastern black sea</Name>
+		<Score>6</Score>
 		<Country>Crimea</Country>
-	    <Country>Georgia</Country>
-		<Country>Golden Horde</Country>
+	    <Country>Circassia</Country>
+		<Country>Theodoro</Country>
+		<Country>Imereti</Country>
+		<Country>Georgia</Country>
+		<Country>Avaria</Country>
+		<Country>Gazikumukh</Country>
+		<Country>Great Horde</Country>
 	</Region>
 	<Region ID="14">
 		<Name>Netherlands</Name>
+		<Score>7</Score>
 		<Country>Burgundy</Country>
+		<Country>Flanders</Country>
+		<Country>Brabant</Country>
+		<Country>Liege</Country>
+		<Country>Nevers</Country>
+		<Country>Utrecht</Country>
+		<Country>Holland</Country>
+		<Country>Gelre</Country>
+		<Country>Friesland</Country>
 	</Region>
 	<Region ID="15">
 		<Name>Poland</Name>
+		<Score>7</Score>
 		<Country>Poland</Country>
+		<Country>Mazovia</Country>
+		<Country>Moldavia</Country>
+		<Country>Silesia</Country>
+		<Country>Wallachia</Country>
 	</Region>
 	<Region ID="16">
 		<Name>Lithuania</Name>
+		<Score>7</Score>
 		<Country>Lithuania</Country>
+		<Country>Odoyev</Country>
+		<Country>Moldavia</Country>
+	</Region>
+	<Region ID="17">
+		<Name>Non-England</Name>
+		<Score>5</Score>
+	    <Country>Scotland</Country>
+		<Country>Irish Minor</Country>
+	</Region>
+	<Region ID="18">
+		<Name>Alps</Name>
+		<Score>8</Score>
+	    <Country>Milan</Country>
+		<Country>Montferrat</Country>
+		<Country>Switzerland</Country>
+		<Country>Savoy</Country>
+		<Country>Mantua</Country>
+		<Country>Ravensburg</Country>
 	</Region>
 	
 </properties>

@@ -44,10 +44,7 @@ public class Tier {
 	{
 		if(countryList != null)
 		{
-			if(!countryList.contains(country))
-			{
-				countryList.add(country);
-			}
+			countryList.add(country);
 		}
 	}
 	

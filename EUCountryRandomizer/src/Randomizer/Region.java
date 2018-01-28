@@ -21,10 +21,7 @@ public class Region {
 	{
 		if(countries != null)
 		{
-			if(!countries.contains(country))
-			{
-				countries.add(country);
-			}
+			countries.add(country);
 		}
 	}
 	
@@ -39,6 +36,32 @@ public class Region {
 		}
 		
 		return false;
+	}
+	
+	public List<Country> getCountries()
+	{
+		return countries;
+	}
+	
+	public List<String> getDuplicates()
+	{
+		List<String> duplicates = new ArrayList<String>();
+		for(Country c1 : countries)
+		{
+			int count = 0;
+			for(Country c2 : countries)
+			{
+				if(c1.getName().equals(c2.getName()))
+				{
+					count++;
+				}
+			}
+			if(count > 1)
+			{
+				duplicates.add(c1.getName());
+			}
+		}
+		return duplicates;
 	}
 	
 	public int getScore() {
