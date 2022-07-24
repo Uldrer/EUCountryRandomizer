@@ -8,60 +8,133 @@
 	    <Country>Castille</Country>
 	    <Country>Austria</Country>
 	    <Country>Ottomans</Country>
-	    <Country>Muscovy</Country>
-	    <Country>Denmark</Country>
-	    <Country>Burgundy</Country>
 	</Tier>
 	<Tier ID="2">
+		<Country>Denmark</Country>
 		<Country>Sweden</Country>
+		<Country>Burgundy</Country>
 	    <Country>Poland</Country>
+		<Country>Brandenburg</Country>
 	    <Country>Lithuania</Country>
 	    <Country>Bohemia</Country>
 	    <Country>Hungary</Country>
+		<Country>Portugal</Country>
+		<Country>Venice</Country>
+		<Country>Aragon</Country>
 	</Tier>
 	<Tier ID="3">
-		<Country>Aragon</Country>
-	    <Country>Mameluks</Country>
-	    <Country>Portugal</Country>
-	    <Country>Venice</Country>
-	    <Country>Novgorod</Country>
 	    <Country>Teutonic Order</Country>
-	    <Country>Brandenburg</Country>
+		<Country>Scotland</Country>
+		<Country>Saxony</Country>
+		<Country>Thuringen</Country>
+		<Country>Brunswick</Country>
+		<Country>Savoy</Country>
+		<Country>Naples</Country>
+		<Country>Florence</Country>
+		<Country>Milan</Country>
+		<Country>Papal States</Country>
+		<Country>Brabant</Country>
+		<Country>The Palatinate</Country>
 	</Tier>
 	<Tier ID="4">
-		<Country>Scotland</Country>
-	    <Country>Bavaria</Country>
-	    <Country>Savoy</Country>
-	    <Country>Hanseatic League</Country>
-	    <Country>Naples</Country>
 	    <Country>Livonian Order</Country>
 	    <Country>Switzerland</Country>
-	    <Country>Milan</Country>
 	    <Country>Genoa</Country>
-	    <Country>Saxony</Country>
+		<Country>Norway</Country>
+		<Country>Ansbach</Country>
+		<Country>Wurzburg</Country>
+		<Country>Mainz</Country>
+		<Country>Lorraine</Country>
+		<Country>Trier</Country>
+		<Country>Baden</Country>
+		<Country>Cleves</Country>
+		<Country>Munster</Country>
+		<Country>Holstein</Country>
+		<Country>Wolgast</Country>
+		<Country>Mecklemburg</Country>
+		<Country>Flanders</Country>
+		<Country>Liege</Country>
+		<Country>Glogow</Country>
+		<Country>Opole</Country>
+		<Country>Holland</Country>
+		<Country>Mazovia</Country>
+		<Country>Croatia</Country>
+		<Country>Verden</Country>
+		<Country>Stettin</Country>
+		<Country>Berg</Country>
+		<Country>Cologne</Country>
+		<Country>Landshult</Country>
+		<Country>Ingolstadt</Country>
+		<Country>Hesse</Country>
+		<Country>Munich</Country>
+		<Country>Wurttemberg</Country>
 	</Tier>
 	<Tier ID="5">
+		<Country>Augsburg</Country>
+		<Country>Aachen</Country>
+		<Country>Memmingen</Country>
+		<Country>Ravensburg</Country>
+		<Country>Siena</Country>
+		<Country>Strasbourg</Country>
+		<Country>East Frisia</Country>
+		<Country>Oldenburg</Country>
+		<Country>Bremen</Country>
+		<Country>Luneburg</Country>
+		<Country>Saxe-Luneburg</Country>
+		<Country>Magdeburg</Country>
+		<Country>Anhalt</Country>
+		<Country>Nuremberg</Country>
+		<Country>Ulm</Country>
+		<Country>Lucca</Country>
+		<Country>Ferrara</Country>
+		<Country>Mantua</Country>
+		<Country>Montferrat</Country>
+		<Country>Utrecht</Country>
+		<Country>Gelre</Country>
+		<Country>Friesland</Country>
+		<Country>Dithmarschen</Country>
+		<Country>Hamburg</Country>
+		<Country>Lubeck</Country>
 		<Country>Serbia</Country>
 	    <Country>Bosnia</Country>
-	    <Country>Byzantine</Country>
-	    <Country>Tuscany</Country>
-	    <Country>Norway</Country>
+		<Country>Herzegovina</Country>
 	    <Country>Brittany</Country>
-	    <Country>Crimea</Country>
-	    <Country>Georgia</Country>
-	    <Country>Algiers</Country>
-	    <Country>Papal States</Country>
-	    <Country>Golden Horde</Country>
-	    <Country>Kazan</Country>
+		<Country>Moldavia</Country>
+		<Country>Wallachia</Country>
+		<Country>Navarra</Country>
+		<Country>Provence</Country>
+		<Country>Nasau</Country>
+		<Country>Frankfurt</Country>
+		<Country>Goslar</Country>
+		<Country>Dortmund</Country>
+		<Country>Mulhouse</Country>
+		<Country>Rothenburg</Country>
+		<Country>Regensburg</Country>
+		<Country>Konstanz</Country>
+		<Country>Bamberg</Country>
+		<Country>Bayreuth</Country>
+		<Country>Passau</Country>
+		<Country>Bregenz</Country>
 	</Tier>
 	<Tier ID="6">
-	    <Country>Tripoli</Country>
-	    <Country>Tunisia</Country>
+		<Country>Nevers</Country>
+		<Country>Salzburg</Country>
+		<Country>Cyprus</Country>
+		<Country>Athens</Country>
+		<Country>Urbino</Country>
+		<Country>Perugia</Country>
+		<Country>Bologna</Country>
+		<Country>Byzantine</Country>
 	    <Country>Granada</Country>
 	    <Country>Irish Minor</Country>
+		<Country>French Vassal</Country>
+		<Country>The Knights</Country>
+	    <Country>Ragusa</Country>
+		<Country>Albania</Country>
+		<Country>Riga</Country>
+		<Country>Corfu</Country>
+		<Country>Cilli</Country>
 	</Tier>
 	<Tier ID="7">
-	    <Country>The Knights</Country>
-	    <Country>Ragusa</Country>
 	</Tier>
 </properties>

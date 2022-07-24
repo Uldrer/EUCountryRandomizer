@@ -7,39 +7,23 @@
 		<Tier>4</Tier>
 	</Player>
 	<Player ID="2">
-		<Name>Hannes</Name>
-		<Tier>4</Tier>
+		<Name>Per</Name>
+		<Tier>3</Tier>
 	</Player>
 	<Player ID="3">
-		<Name>Per</Name>
-		<Tier>4</Tier>
-	</Player>
-	<Player ID="4">
 		<Name>Mats</Name>
 		<Tier>4</Tier>
 	</Player>
-	<Player ID="5">
+	<Player ID="4">
 		<Name>Johan</Name>
 		<Tier>4</Tier>
 	</Player>
-	<Player ID="6">
-		<Name>Erik</Name>
+	<Player ID="5">
+		<Name>Jonathan</Name>
 		<Tier>3</Tier>
 	</Player>
-	<Player ID="7">
-		<Name>Christian</Name>
-		<Tier>4</Tier>
-	</Player>
-	<Player ID="8">
-		<Name>Gunnar</Name>
-		<Tier>6</Tier>
-	</Player>
-	<Player ID="9">
-		<Name>Fredrik</Name>
-		<Tier>1</Tier>
-	</Player>
-	<Player ID="10">
-		<Name>Jocke</Name>
-		<Tier>1</Tier>
+	<Player ID="6">
+		<Name>Ludvig</Name>
+		<Tier>5</Tier>
 	</Player>
 </properties>
