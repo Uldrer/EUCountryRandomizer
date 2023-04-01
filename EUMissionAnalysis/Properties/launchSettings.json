@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "EUMissionAnalysis": {
+      "commandName": "Project",
+      "commandLineArgs": "gamestate",
+      "workingDirectory": "C:\\Code\\EU-Programs\\EUMissionAnalysis\\bin\\Debug\\net6.0"
+    }
+  }
+}
