@@ -40,12 +40,14 @@ namespace EUMissionAnalysis
 
             Dictionary<string, string> religionDict = new Dictionary<string, string>();
             Dictionary<string, string> provinceDict = new Dictionary<string, string>();
+            List<string> freeCityList = new List<string>();
 
             foreach (var country in countryDict.Values)
             {
                 string searchStringCountry = "\t" + country + "={";
                 string searchStringGovRank1 = "\t\tgovernment_rank=";
                 string searchStringGovRank2 = "\t\thas_set_government_name=";
+                string searchStringFreeCity = "\t\tgovernment_name=\"german_free_city\"";
                 string searchStringReligion = "\t\treligion=";
                 string searchStringCities = "\t\tnum_of_cities=";
                 string searchStringEnd = "\t}";
@@ -80,6 +82,10 @@ namespace EUMissionAnalysis
                             religionDict.Add(country, line.Substring(searchStringReligion.Length));
                             foundReligion = true;
                         }
+                        else if(line.Equals(searchStringFreeCity))
+                        {
+                            freeCityList.Add(country);
+                        }
                         else
                         {
                             // keep searching we just have to go further down
@@ -113,17 +119,18 @@ namespace EUMissionAnalysis
 
             foreach(var country in countryDict.Keys)
             {
+                bool freeCity = freeCityList.Contains(countryDict[country]);
                 if(religionDict.ContainsKey(countryDict[country]) && provinceDict.ContainsKey(countryDict[country]))
                 {
-                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= " + provinceDict[countryDict[country]]);
+                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity);
                 }
                 else if(religionDict.ContainsKey(countryDict[country]))
                 {
-                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= NOT FOUND " );
+                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= NOT FOUND " + " freeCity: " + freeCity);
                 }
                 else if (provinceDict.ContainsKey(countryDict[country]))
                 {
-                    Console.WriteLine("country= " + country + ", religion= NOT FOUND" + ", provinces= " + provinceDict[countryDict[country]]);
+                    Console.WriteLine("country= " + country + ", religion= NOT FOUND" + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity);
                 }
                 else
                 {
