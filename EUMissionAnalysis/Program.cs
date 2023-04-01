@@ -6,22 +6,28 @@ namespace EUMissionAnalysis
     {
         static void Main(string[] args)
         {
-            string fileName;
-            if(args.Length == 0)
+            string fileName1 = "";
+            string fileName2 = "";
+            if (args.Length == 0)
             {
-                Console.WriteLine("Usage: EUMissionAnalysis.exe <save_file_name>");
+                Console.WriteLine("Usage: EUMissionAnalysis.exe <save_file_name_1> | <save_file_name_2>");
                 return;
+            }
+            else if(args.Length == 1)
+            {
+                fileName1 = args[0];
             }
             else
             {
-                fileName = args[0];
+                fileName1 = args[0];
+                fileName2 = args[1];
             }
 
             string dirPath = Directory.GetCurrentDirectory();
-            string[] linesSave = System.IO.File.ReadAllLines(dirPath + "\\" + fileName);
+            
             string[] linesCountries = System.IO.File.ReadAllLines(dirPath + "\\" + "countries.txt");
 
-            Dictionary<string, string> countryDict= new Dictionary<string, string>();
+            Dictionary<string, string> countryDict = new Dictionary<string, string>();
 
             foreach (string line in linesCountries)
             {
@@ -30,17 +36,71 @@ namespace EUMissionAnalysis
 
                 string[] splitString = line.Split("\t".ToCharArray());
 
-                if(splitString.Length > 1)
+                if (splitString.Length > 1)
                 {
                     countryDict.Add(splitString[0], splitString[1]);
                 }
             }
 
-            //var stop1 = Console.ReadLine();
-
             Dictionary<string, string> religionDict = new Dictionary<string, string>();
             Dictionary<string, string> provinceDict = new Dictionary<string, string>();
             List<string> freeCityList = new List<string>();
+            Dictionary<string, int> provinceDiffDict = new Dictionary<string, int>();
+
+            // Handle several files over files if present
+            if (args.Length > 1) 
+            {
+                Dictionary<string, string> tempReligionDict = new Dictionary<string, string>();
+                Dictionary<string, string> tempProvinceDict = new Dictionary<string, string>();
+                List<string> tempFreeCityList = new List<string>();
+
+                ParseSaveFile(dirPath, fileName1, countryDict, tempReligionDict, tempProvinceDict, tempFreeCityList);
+                ParseSaveFile(dirPath, fileName2, countryDict, religionDict, provinceDict, freeCityList);
+
+                foreach(var countryKey in provinceDict.Keys)
+                {
+                    int valEarly = Int32.Parse(tempProvinceDict[countryKey]);
+                    int valLate = Int32.Parse(provinceDict[countryKey]);
+                    provinceDiffDict.Add(countryKey, valLate - valEarly);
+                }
+            }
+            else
+            {
+                ParseSaveFile(dirPath, fileName1, countryDict, religionDict, provinceDict, freeCityList);
+            }
+            
+
+
+            // Printouts
+            foreach (var country in countryDict.Keys)
+            {
+                bool freeCity = freeCityList.Contains(countryDict[country]);
+                bool hasDiff = provinceDiffDict.Count > 0;
+                if (religionDict.ContainsKey(countryDict[country]) && provinceDict.ContainsKey(countryDict[country]))
+                {
+                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity + ", " + (hasDiff? " has province diff: " + provinceDiffDict[countryDict[country]] : " has no known province diff." ) );
+                }
+                else if (religionDict.ContainsKey(countryDict[country]))
+                {
+                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= NOT FOUND " + " freeCity: " + freeCity + ", " + (hasDiff ? " has province diff: " + provinceDiffDict[countryDict[country]] : " has no known province diff."));
+                }
+                else if (provinceDict.ContainsKey(countryDict[country]))
+                {
+                    Console.WriteLine("country= " + country + ", religion= NOT FOUND" + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity + ", " + (hasDiff ? " has province diff: " + provinceDiffDict[countryDict[country]] : " has no known province diff."));
+                }
+                else
+                {
+                    Console.WriteLine("country= " + country + " NOT FOUND");
+                }
+            }
+
+            var stop2 = Console.ReadLine();
+        }
+
+        public static void ParseSaveFile(string dirPath, string fileName, Dictionary<string, string> countryDict, Dictionary<string, string> religionDict, Dictionary<string, string> provinceDict, List<string> freeCityList)
+        {
+            string[] linesSave = System.IO.File.ReadAllLines(dirPath + "\\" + fileName);
+            
 
             foreach (var country in countryDict.Values)
             {
@@ -116,32 +176,6 @@ namespace EUMissionAnalysis
                     }
                 }
             }
-
-            foreach(var country in countryDict.Keys)
-            {
-                bool freeCity = freeCityList.Contains(countryDict[country]);
-                if(religionDict.ContainsKey(countryDict[country]) && provinceDict.ContainsKey(countryDict[country]))
-                {
-                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity);
-                }
-                else if(religionDict.ContainsKey(countryDict[country]))
-                {
-                    Console.WriteLine("country= " + country + ", religion= " + religionDict[countryDict[country]] + ", provinces= NOT FOUND " + " freeCity: " + freeCity);
-                }
-                else if (provinceDict.ContainsKey(countryDict[country]))
-                {
-                    Console.WriteLine("country= " + country + ", religion= NOT FOUND" + ", provinces= " + provinceDict[countryDict[country]] + " freeCity: " + freeCity);
-                }
-                else
-                {
-                    Console.WriteLine("country= " + country + " NOT FOUND");
-                }
-            }
-
-            
-
-
-            var stop2 = Console.ReadLine();
         }
     }
 }
