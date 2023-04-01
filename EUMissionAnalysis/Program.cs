@@ -44,7 +44,8 @@ namespace EUMissionAnalysis
             foreach (var country in countryDict.Values)
             {
                 string searchStringCountry = "\t" + country + "={";
-                string searchStringGovRank = "\t\tgovernment_rank=";
+                string searchStringGovRank1 = "\t\tgovernment_rank=";
+                string searchStringGovRank2 = "\t\thas_set_government_name=";
                 string searchStringReligion = "\t\treligion=";
                 string searchStringCities = "\t\tnum_of_cities=";
                 string searchStringEnd = "\t}";
@@ -61,7 +62,7 @@ namespace EUMissionAnalysis
                     else if(foundCountryTag && !foundGovTag)
                     {
                         // Check if next is goverment rank
-                        if(line.StartsWith(searchStringGovRank))
+                        if(line.StartsWith(searchStringGovRank1) || line.StartsWith(searchStringGovRank2))
                         {
                             foundGovTag = true;
                         }
