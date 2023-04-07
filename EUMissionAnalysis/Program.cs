@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
 using System.Collections;
+using System.Linq;
+
 namespace EUMissionAnalysis
 {
     class Program
@@ -71,7 +74,7 @@ namespace EUMissionAnalysis
             
 
 
-            // Printouts
+            // Printouts combined
             foreach (var country in countryDict.Keys)
             {
                 bool freeCity = freeCityList.Contains(countryDict[country]);
@@ -93,6 +96,27 @@ namespace EUMissionAnalysis
                     Console.WriteLine("country= " + country + " NOT FOUND");
                 }
             }
+            Console.WriteLine();
+            Console.WriteLine("FREE Cities");
+            // Printouts free cities
+            foreach (var country in countryDict.Keys)
+            {
+                bool freeCity = freeCityList.Contains(countryDict[country]);
+                if(freeCity)
+                    Console.WriteLine(country);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Expanded countries");
+            // Printouts free cities
+            foreach (var country in countryDict.Keys)
+            {
+                int diff = provinceDiffDict[countryDict[country]];
+                if(diff >= 2)
+                {
+                    Console.WriteLine(country);
+                }
+            }
+            Console.WriteLine();
 
             var stop2 = Console.ReadLine();
         }
