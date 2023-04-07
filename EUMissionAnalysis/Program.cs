@@ -107,11 +107,22 @@ namespace EUMissionAnalysis
             }
             Console.WriteLine();
             Console.WriteLine("Expanded countries");
-            // Printouts free cities
+            // Printouts expanded countries
             foreach (var country in countryDict.Keys)
             {
                 int diff = provinceDiffDict[countryDict[country]];
                 if(diff >= 2)
+                {
+                    Console.WriteLine(country);
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Destroyed countries");
+            // Printouts destroyed countries
+            foreach (var country in countryDict.Keys)
+            {
+                string num = provinceDict[countryDict[country]];
+                if (num == "0")
                 {
                     Console.WriteLine(country);
                 }
