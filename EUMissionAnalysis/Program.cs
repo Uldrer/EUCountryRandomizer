@@ -146,6 +146,13 @@ namespace EUMissionAnalysis
                         {
                             freeCityList.Add(country);
                         }
+                        else if (line == searchStringEnd)
+                        {
+                            // Came to the end
+                            religionDict.Add(country, "None");
+                            provinceDict.Add(country, "0");
+                            break;
+                        }
                         else
                         {
                             // keep searching we just have to go further down

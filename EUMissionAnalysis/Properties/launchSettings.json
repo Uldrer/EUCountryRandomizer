@@ -2,7 +2,7 @@
   "profiles": {
     "EUMissionAnalysis": {
       "commandName": "Project",
-      "commandLineArgs": "gamestate_1444 gamestate_1482",
+      "commandLineArgs": "gamestate_1444 gamestate_1500",
       "workingDirectory": "C:\\Code\\EU-Programs\\EUMissionAnalysis\\bin\\Debug\\net6.0"
     }
   }
